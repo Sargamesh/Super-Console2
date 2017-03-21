@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Initial First Time Setup</title>
+    <script type="text/javascript">
+    const Config = require('electron-config');
+    const config = new Config([Setup]);
+    console.log(app.getPath('userData'));
+//Set Game title
+    function GameTitle (form) {
+    config.set('GameTitle',form.inputbox2.value);
+    var GameTitleInput = config.get('GameTitle');
+    alert ("You typed: " + "Config Typed" +GameTitleInput);  }
+    </script>
+
+  </head>
+  <body>
+    <form NAME="myform" ACTION="" METHOD="GET">Enter something in the box: <BR>
+<input TYPE="text" placeholder="Enter Game Title" NAME="inputbox2" VALUE="">
+/Show Form
+<INPUT TYPE="button" NAME="button" Value="Enter" onClick="GameTitle(this.form)">
+//Show Form
+<input TYPE="button" NAME="button" Value="Show Log" onClick="console.log(config.get('GameTitle'))">
+
+  </body>
+</html>

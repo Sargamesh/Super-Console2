@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css" title="nintendo" />
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script>
+        //EMULATOR PATHS
+        var cemu = "C:\\Program Files (x86)\\cemu_1.7.2\\Cemu.exe"
+            //GAMELOCATIONS
+        var smm = "E:\\Games\\fk-smm.wud"
+        var WindWakerHD = "E:\\Games\\fk-zeldahd.wud"
+
+        const Config = require('electron-config');
+        const config = new Config();
+    </script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <img class=BG2 src="images/Super_Mario_3D_World_Background.jpg" />
+    <div class="row">
+      <div class="col-4">
+        <img id=headerlogo src="images/superconsolelogo.svg"/>
+      </div>
+      <div class="col-8">
+        <h2> Memes</h2>
+
+      </div>
+    </div>
+    <!-- <div class="game";>
+         <a href="#" value="Run Game" onclick="return rungame(smm);"><img class="Cover Art" src="images/Super_Mario_Maker_Artwork.jpg"/></a>
+     </div> -->
+    <div id="content">
+        <span class="menu">
+      <h2>Menu</h2>
+        <div class="menuitem">
+        <p>Wii U Games</p>
+        </div>
+        <div class="menuitem">
+        <p>Gamecube Games</p>
+        </div>
+        <div class="menuitem">
+        <p><script>document.write(config.get('potato'))</script></p>
+        </div>
+    </span>
+        <div class="gamePane">
+            <div class="game" ;>
+                <a href="#" value="Run Game" onclick="return rungame(cemu,smm);"><img class="coverart" src="images/Super_Mario_Maker_Artwork.jpg" /></a>
+            </div>
+            <div class="game" ;>
+                <a href="#" value="Run Game" onclick="return rungame(cemu,WindWakerHD);"><img class="coverart" src="images/WindWaker_WIiU.jpg" /></a>
+            </div>
+            <div class="game" ;>
+                <a href="#" value="Run Game" onclick="return rungame(cemu,smm);"><img class="coverart" src="images/Super_Mario_3D_World.png" /></a>
+            </div>
+            <div class="game" ;>
+                <a href="#" value="Run Game" onclick="return rungame(cemu,WindWakerHD);"><img class="coverart" src="images/Super_Smash_Bros_WiiU.png" /></a>
+            </div>
+            <div class="game" ;>
+                <a href="#" value="Run Game" onclick="return rungame(cemu,smm);"><img class="coverart" src="images/Hyrule_Warriors.jpg" /></a>
+            </div>
+            <div class="game" ;>
+                <a href="#" value="Run Game" onclick="return rungame(cemu,WindWakerHD);"><img class="coverart" src="images/WindWaker_WIiU.jpg" /></a>
+            </div>
+            <div class="game" ;>
+                <a href="#" value="Run Game" onclick="return rungame(cemu,smm);"><img class="coverart" src="images/Super_Mario_Maker_Artwork.jpg" /></a>
+            </div>
+            <div class="game" ;>
+                <a href="#" value="Run Game" onclick="return rungame(cemu,WindWakerHD);"><img class="coverart" src="images/WindWaker_WIiU.jpg" /></a>
+            </div>
+            <div class="game" ;>
+                <a href="#" value="Run Game" onclick="return rungame(cemu,WindWakerHD);"><img class="coverart" src="images/WindWaker_WIiU.jpg" /></a>
+            </div>
+            <!-- <a href="#" value="SuperMario" onclick="return fun();" >CEMU</a> -->
+        </div>
+    </div>
+  </div>
+</body>
+
+<script>
+    // You can also require other files to run in this process
+    //Change current path to equal path clicked on
+    // var gameswitcher =function(){
+    //      console.log("gameswitcher() start");
+    //      currentpath=smm;
+    // }
+
+    //Game Launching Code
+    var exec = require('child_process').execFile;
+
+    var rungame = function(emu, game) {
+        console.log("rungame() start");
+        exec(emu, ['-f', '-g', game], function(err, data) {
+            console.log(err)
+            console.log(data.toString());
+        });
+    }
+
+    //     var exec = require('child_process').execFile;
+    //     var rungame =function(p1){
+    //    console.log("rungame() start");
+    //    exec(p1, function(err, data) {
+    //         console.log(err)
+    //         console.log(data.toString());
+    //     });
+    // }
+
+    require('./renderer.js')
+
+</script>
+
+</html>

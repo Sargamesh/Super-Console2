@@ -1,0 +1,9 @@
+//     var exec = require('child_process').execFile;
+//
+//     var fun =function(){
+//    console.log("fun() start");
+//    exec('C:\\Program Files (x86)\\cemu_1.7.2\\Cemu.exe',['-g E:\\Games\\fk-smm.wud'], function(err, data) {
+//         console.log(err)
+//         console.log(data.toString());
+//     });
+// }

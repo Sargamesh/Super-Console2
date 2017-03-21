@@ -1,0 +1,1 @@
+start /d "C:\Program Files (x86)\cemu_1.7.2\" Cemu.exe -f -g E:\Games\fk-smm.wud

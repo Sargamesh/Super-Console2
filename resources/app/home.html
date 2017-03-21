@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css" title="nintendo" />
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script>
+    const Config = require('electron-config');
+    const config = new Config();
+    </script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- <img class=BG2 src="images/Super_Mario_3D_World_Background.jpg" /> -->
+    <div class="row">
+      <div class="col-12">
+      <img id=homelogo src="images/superconsolelogo.svg"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="homemenuitem">
+          <h2><a href="index.html">GAMES</a></h2>
+        </div>
+
+      </div>
+      <div class="col-4">
+        <div class="homemenuitem">
+          <h2><a href="initialsetup.html">initialsetup</a></h2>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="homemenuitem">
+          <h2>SETTINGS</h2>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+
+</body>
+<script>
+  console.log(app.getPath('userData'))
+  require('./renderer.js')
+</script>
+
+</html>
