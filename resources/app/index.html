@@ -3,16 +3,19 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css" title="nintendo" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"  />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"  />
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <!-- Add JS -->
+    <script type="text/javascript" src="js/parent.js"></script>
     <script>
+
         //EMULATOR PATHS
         var cemu = "C:\\Program Files (x86)\\cemu_1.7.2\\Cemu.exe"
             //GAMELOCATIONS
         var smm = "E:\\Games\\fk-smm.wud"
         var WindWakerHD = "E:\\Games\\fk-zeldahd.wud"
-
     </script>
 
 </head>
@@ -24,9 +27,15 @@
       <div class="col-4">
         <img id=headerlogo src="images/superconsolelogo.svg"/>
       </div>
-      <div class="col-8">
+      <div class="col-6">
         <h2> Memes</h2>
-
+      </div>
+      <div class="col-2">
+        <div id="title-bar-btns">
+               <button id="min-btn">-</button>
+               <button id="max-btn">+</button>
+               <button id="close-btn">x</button>
+          </div>
       </div>
     </div>
     <!-- <div class="game";>

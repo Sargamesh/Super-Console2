@@ -2,13 +2,16 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css" title="nintendo" />
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Insert CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"  />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"  />
+
+
+    <title>Landing Page</title>
+    <script type="text/javascript" src="js/parent.js"></script>
     <script>
-    const Config = require('electron-config');
-    const config = new Config();
     </script>
 
 </head>
@@ -16,6 +19,15 @@
 <body>
   <div class="container-fluid">
     <!-- <img class=BG2 src="images/Super_Mario_3D_World_Background.jpg" /> -->
+    <div class="row">
+      <div col-12>
+        <div id="title-bar-btns">
+               <button id="min-btn">-</button>
+               <button id="max-btn">+</button>
+               <button id="close-btn">x</button>
+          </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-12">
       <img id=homelogo src="images/superconsolelogo.svg"/>
@@ -46,7 +58,6 @@
 
 </body>
 <script>
-  console.log(app.getPath('userData'))
   require('./renderer.js')
 </script>
 
