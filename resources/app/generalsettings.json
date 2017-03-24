@@ -1,0 +1,12 @@
+
+{
+  "username":"xyz",
+  "password":"xyz@123",
+  "email":"xyz@xyz.com",
+  "uid": 1100,
+  "Emulator":"CEMU",
+  "CemuPath":"C:\\Program Files (x86)\\cemu_1.7.2\\Cemu.exe",
+  "Emulator":"Dolphin",
+  "DolphinPath":"C:\\Program Files\\Dolphin\\Dolphin.exe",
+
+}

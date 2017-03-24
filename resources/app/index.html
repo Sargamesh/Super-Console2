@@ -2,13 +2,18 @@
 <html>
 
 <head>
+  <!--Defualt Page Code START -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Insert CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css"  />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"  />
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <!-- Add JS -->
-    <script type="text/javascript" src="js/parent.js"></script>
+    <!--Default Scripts -->
+    <script type="text/javascript" src="js/windowControl.js"></script>
+    <script>
+    </script>
+    <!--Default Page Code END -->
+
     <script>
 
         //EMULATOR PATHS
@@ -23,12 +28,10 @@
 <body>
   <div class="container-fluid">
     <img class=BG2 src="images/Super_Mario_3D_World_Background.jpg" />
-    <div class="row">
-      <div class="col-4">
-        <img id=headerlogo src="images/superconsolelogo.svg"/>
-      </div>
-      <div class="col-6">
-        <h2> Memes</h2>
+    <!-- WINDOW CONTROL START-->
+    <div id="windowControl"class="row">
+      <div class="col-10">
+        <p>Super Console Version Number</p>
       </div>
       <div class="col-2">
         <div id="title-bar-btns">
@@ -38,12 +41,21 @@
           </div>
       </div>
     </div>
+    <!-- WINDOW CONTROL END-->
+    <div class="row">
+      <div class="col-4">
+        <img id=headerlogo src="images/superconsolelogo.svg"/>
+      </div>
+      <div class="col-6">
+        <h2> Memes</h2>
+      </div>
+    </div>
     <!-- <div class="game";>
          <a href="#" value="Run Game" onclick="return rungame(smm);"><img class="Cover Art" src="images/Super_Mario_Maker_Artwork.jpg"/></a>
      </div> -->
     <div id="content">
         <span class="menu">
-      <h2>Menu</h2>
+        <a class="sidebaroption" href="home.html">Start Screen</a>
         <div class="menuitem">
         <p>Wii U Games</p>
         </div>
